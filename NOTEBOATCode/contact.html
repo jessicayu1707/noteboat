@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link id="themestylesheet" rel="stylesheet" href="css/smallLight.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/boat.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="container">
+
+  <section class="header">
+  <div class="container">
+  <div class="row">
+
+    <div id ="logo" class="six columns offset-by-three">
+      <a href="dashboard.php">
+        <img id="changelogo" class="u-full-width" src="images/logo2.png">
+      </a>
+    </div>
+	
+  </div>
+  </div>
+  </section>
+
+  <section class="main">
+  <div class="container">
+<div class="row">
+      <a href="#" onclick="changeCSS('theme');">CHANGE THEME</a><br>
+      <a href="#" onclick="changeCSS('font');">CHANGE FONT SIZE</a>
+
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h5>Contact Us</h5>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="twelve columns">
+          <p>If you have any questions or comments, please email us <a href="mailto:contactnoteboat@gmail.com?subject=Contact Note Boat">here</a>.</p>
+          
+          <p>If you have any complaints about other users please visit our <a href="http://10.2.238.64/NOTEBOAT/termsAndConditions.html">terms and conditions page</a> for more information on how to make a complaint.</p>
+      </div>
+    </div>
+ 
+  </div>
+  </section>
+
+  <section class="footer">
+  <div class="container">
+  <div class="row">
+    <div id="navigation" class="twelve columns">
+      <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="termsAndConditions.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </nav>
+    </div>
+  </div>
+  </div>
+  </section>
+
+</div>
+
+<script>
+function changeCSS(change) {
+  var current = document.getElementById('themestylesheet').href;
+
+  var array = current.split('/');
+  var currentFileName = array[array.length - 1];
+  var newFileName = currentFileName;
+
+  if (currentFileName == 'smallDark.css')
+  {
+     change == "font" ? newFileName = "bigDark.css" : newFileName = "smallLight.css";
+  }
+
+  else if (currentFileName == "smallLight.css")
+  {
+    change == "font" ? newFileName = "bigLight.css" : newFileName = "smallDark.css";
+  }
+
+  else if (currentFileName == "bigLight.css")
+  {
+    change == "font" ? newFileName = "smallLight.css" : newFileName = "bigDark.css";
+  }
+
+  else if (currentFileName == "bigDark.css")
+  {
+    change == "font" ? newFileName = "smallDark.css" : newFileName = "bigLight.css";
+  }
+	
+  var newDir = array[0];
+  for (var i = 1; i < array.length - 1; i++)
+  {
+    newDir += "/" + array[i];
+  }
+  newDir += "/" + newFileName;
+
+  document.getElementById('themestylesheet').href= newDir;
+
+}
+</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

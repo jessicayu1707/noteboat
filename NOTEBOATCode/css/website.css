@@ -1,0 +1,161 @@
+/*footer navigation bar css*/
+body{
+  background-color: #f4f9f9;
+}
+
+section.footer ul {
+  height: 45px;
+  list-style-type: none;
+  margin-top:15px;
+
+}
+
+section.footer li {
+
+  height: 45px;
+  display: inline-block;
+  text-align: center;
+  font-size: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section.footer a{
+  display:block;
+  text-decoration: none;
+}
+
+section.footer li:hover {
+  text-decoration: underline;
+  color:#1eaedb;
+}
+
+section.footer li a{
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+
+/*padding between sections*/
+section.header div.container {
+  padding-top: 30px;
+}
+
+section.login div.container {
+  padding-top: 50px;
+}
+
+section.main div.container {
+  padding-top: 50px;
+}
+
+section.footer div.container {
+  padding-top: 50px;
+}
+
+section.notes div.container {
+  padding-top: 50px;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4f8ff;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+section.footer{
+    text-align: center;
+}
+
+  #timetableHolder {
+    height:700px;
+    width:100%;
+    overflow:visible;
+    border:1px solid  #d7d7d7;
+    padding:0;
+    position:relative;
+  }
+
+#progressBars{padding:15px;}
+
+
+  #timetableHeader {
+    position: absolute;
+    border:1px solid #d7d7d7;
+    overflow:visible;
+  }
+
+
+  #timetableMeat {
+    position: absolute;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:scroll;
+  }
+  ::-webkit-scrollbar {display:none;}
+
+  #makeActivity{
+    display: inline;
+  }
+
+  div.grid{
+      position: absolute;
+      border:1px solid #d7d7d7;
+  	color:#164c56;
+  	font-size: 15px;
+    font-weight: bold;
+
+    }
+
+  .box {
+  	text-align: center;
+      display: table;
+      overflow:hidden;
+    color:white;
+  	min-width: 136px;
+  	min-height: 59px;
+    background-color:green;
+
+  	position: absolute;
+  	top:0;
+  	-webkit-border-radius: 7px;
+  	-moz-border-radius: 7px;
+  	border-radius: 7px;
+  	border:2px solid lightgrey;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+  span {
+    display: table-cell;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
